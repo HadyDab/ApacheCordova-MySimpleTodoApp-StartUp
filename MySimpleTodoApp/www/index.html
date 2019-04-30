@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>My Todo App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height = device-height">
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container   &#9776  -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open()">&#9776; Menu</button>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <h5>Menu</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"> Close Menu</a>
+    <a id="todos" href="#Available Todos" class="w3-bar-item w3-button w3-padding">Available Todos</a>
+    <a id="Dtodos" href="#Done Todos" class="w3-bar-item w3-button w3-padding">Done Todos<a>
+    <a id="Ntodo" href="#Add new Todo" class="w3-bar-item w3-button w3-padding">Add new Todo</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT!  -->
+
+<div id="pageContent" class="w3-main" style="margin-left:300px;margin-top:43px;">
+  <!-- End page content -->
+</div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index2.js"></script>
+</body>
+</html>
